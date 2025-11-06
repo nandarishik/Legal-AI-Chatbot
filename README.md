@@ -102,8 +102,8 @@ You must run the `ingest_data.py` script *before* you can run the app.
 
 ---
 
-## 📁 Project Structure
 Legal AI Chatbot/
+│
 ├── app.py                 # 🎯 Main Streamlit application (runs the chatbot UI)
 ├── ingest_data.py         # 🧠 Script to process PDFs and build the FAISS vector store
 ├── requirements.txt       # 📦 Python dependencies
