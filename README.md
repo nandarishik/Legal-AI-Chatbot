@@ -102,17 +102,19 @@ You must run the `ingest_data.py` script *before* you can run the app.
 
 ---
 
+## 📁 Project Structure
+<pre>
 Legal AI Chatbot/
+├── app.py                 🎯 Main Streamlit application
+├── ingest_data.py         🧠 Builds FAISS vector store
+├── requirements.txt       📦 Python dependencies
+├── .env                   🔑 Environment variables
+├── .gitignore             🚫 Git ignore file
 │
-├── app.py                 # 🎯 Main Streamlit application (runs the chatbot UI)
-├── ingest_data.py         # 🧠 Script to process PDFs and build the FAISS vector store
-├── requirements.txt       # 📦 Python dependencies
-├── .env                   # 🔑 Environment variables (e.g., API keys) — not committed to Git
-├── .gitignore             # 🚫 Specifies files/folders Git should ignore
+├── documents/             📂 Input PDFs
+│   └── example.pdf        📝 Example document
 │
-├── documents/             # 📂 Folder for input PDFs
-│   └── example.pdf        # 📝 Example document for ingestion
-│
-└── vector_store/          # 🗂️ Folder for generated FAISS database
-    ├── index.faiss        # 💾 FAISS index file
-    └── index.pkl          # 🧩 Metadata pickle file
+└── vector_store/          🗂️ FAISS database
+    ├── index.faiss        💾 Vector index
+    └── index.pkl          🧩 Metadata
+</pre>
