@@ -1,0 +1,13 @@
+
+# Python virtual environment
+/venv
+
+# Secret API keys
+.env
+
+# Local vector database
+/vector_store/
+
+# Python cache files
+__pycache__/
+*.pyc
